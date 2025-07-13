@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>My first page is a lie</title>
+<style>
+form {
+    background-color: white;
+    align-self: center;
+    grid-row-start: 4;
+    grid-row-end: 12;
+    grid-column-start: 6;
+    grid-column-end: 12;
+    width : 225px;
+    padding : 20px;
+    border : 5px solid steelblue;
+    margin : 0px;
+    justify-self:center;
+} 
+
+body{
+   height:900px;
+    margin:0px;
+    padding:0px;
+    display:grid;
+    grid-template-columns: 
+    minmax(10px,1fr)
+    repeat(14,1fr)
+    minmax(10px,1fr);
+    
+    grid-template-rows: repeat(16,1fr);
+}
+pre.Navigation{
+    margin: 0px;
+    justify-self: center;
+}
+nav{
+    justify-self: center;
+    justify-content: center;
+    align-content: center;
+    align-self: center;
+    height:30px;
+    width: 30vw;
+    background-image: url("/Assignment1/ECommerceAssignment/NavBarBack.png");
+    background-repeat:no-repeat;
+    background-size: 100% 100%;
+    grid-column-start: 5;
+    grid-column-end: 13;
+    grid-row-start: 3;
+    grid-row-end: 5;
+    border-color:black;
+    border: 1px;
+}
+.banner{
+   background-image: url("/Assignment1/ECommerceAssignment/Banner.jpeg");
+   background-repeat:no-repeat;
+   background-size: 100% 100%;
+    grid-row-start:1;
+    grid-row-end:17;
+    grid-column-start:1;
+    grid-column-end:17;
+}
+.Logo{
+    justify-items: center;
+    align-items:center;
+    background-image: url("/Assignment1/ECommerceAssignment/HeaderBack1.jpg");
+    width:100vw;
+    height: 5vw;
+    background-repeat:no-repeat;
+    background-size: 100% 100%;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    grid-column-start:1;
+    grid-column-end: 17;
+}
+
+
+</style>
+</head>
+<body>
+<div class="banner">
+</div>  
+<div class="Logo">
+<h1>
+Welcome to CUFE's Online Library
+</h1>
+</div>
+<nav>
+<pre class="Navigation">
+<a href="">About us</a>     <a href="">Discovery</a>     <a href="">Help</a>
+</pre>
+</nav>
+<form>
+<label>First Name</label><br>
+<input type="text"><br>
+<label>Last Name</label><br>
+<input type="text"><br>
+<label>Email</label><br>
+<input type="text"><br>
+<label>Date of Birth</label><br>
+<input type="text"><br>
+<br>
+<input type="submit">
+<input type="button" value="Forgot Your Password">
+</form>
+</body>
+</html>
