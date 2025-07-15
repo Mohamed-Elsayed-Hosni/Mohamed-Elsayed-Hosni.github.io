@@ -18,7 +18,11 @@ form {
 } 
 
 body{
-   height:900px;
+       background-image: url("/Assignment1/ECommerceAssignment/Banner.jpeg");
+   background-repeat:no-repeat;
+   background-size: 100% 100%;
+    background-attachment: fixed;
+   height:800px;
     margin:0px;
     padding:0px;
     display:grid;
@@ -34,6 +38,8 @@ pre.Navigation{
     justify-self: center;
 }
 nav{
+    display:flexbox;
+    align-content:space-between;
     justify-self: center;
     justify-content: center;
     align-content: center;
@@ -50,15 +56,7 @@ nav{
     border-color:black;
     border: 1px;
 }
-.banner{
-   background-image: url("/Assignment1/ECommerceAssignment/Banner.jpeg");
-   background-repeat:no-repeat;
-   background-size: 100% 100%;
-    grid-row-start:1;
-    grid-row-end:17;
-    grid-column-start:1;
-    grid-column-end:17;
-}
+
 .Logo{
     justify-items: center;
     align-items:center;
@@ -76,9 +74,7 @@ nav{
 
 </style>
 </head>
-<body>
-<div class="banner">
-</div>  
+<body> 
 <div class="Logo">
 <h1>
 Welcome to CUFE's Online Library
@@ -96,6 +92,7 @@ Welcome to CUFE's Online Library
 <br>
 <input type="submit">
 <input type="button" value="Forgot Your Password">
+<input type="button" value="Continue as Guest">
 </form>
 </body>
 </html>
