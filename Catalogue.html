@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>Homepage</title>
+<title>Catalogue</title>
 <style>
 
 body{
@@ -30,9 +30,28 @@ h2{
     text-align: center;
     flex-basis: 100%;
 }
-section.Announcement{
-    border:1vw  solid black;
-    width: 70%;
+section.Item{
+    display: flex;
+    width: 40%;
+    height: fit-content;
+    justify-content: center;
+    margin: 10px;
+    margin-bottom: 50px;
+    
+}
+section.Item > figure{
+    width:60%;
+    height: 50%;
+    margin: 0px;
+    
+}
+
+section.Item * img  {
+    width:100%;
+    height: auto; 
+    max-width: 250px;
+    max-height: 350px;
+    object-fit:fill;
 }
 div.list{
     display: flex;
@@ -44,7 +63,15 @@ div.list{
     justify-content: space-evenly;
     flex-wrap: wrap;
     align-items: flex-start;
+    align-content: flex-start;
 
+}
+figcaption{
+    width:50%;
+    height:50%;
+    text-align: center;
+    justify-self: center;
+    color: teal;
 }
 nav.Search{
     display:flex;
@@ -123,7 +150,111 @@ Welcome to CUFE's Online Library
 <nav class="Search">
 <a class="Navigation" href="HomePage.html">Home</a>     <a class="Navigation" href="Catalogue.html">Catalogue</a>     <a class="Navigation" href="Checkout.html">Checkout</a>
 </nav>
-<div class="list"></div>
+<div class="list">
+     <section class="Item">
+        <figure>
+        <a href="Checkout.html" style="text-decoration-line: none;">
+        <img src="Book1.jpg" alt="The Art Of War">
+        <figcaption>
+        The Art of War
+        <br>
+        Sun Tzu
+        <br>
+        Classic Literature
+        <br>
+        <pre></pre>
+        <p style="color: green; text-decoration-line: none;"> AVALIABLE</p>
+        </a>
+        </figcaption>
+        </figure>
+    </section>
+    <section class="Item">
+        <figure>
+        <a href="Checkout.html" style="text-decoration-line: none;">
+        <img src="Book2.jpg" alt="Metamorphosis">
+        <figcaption>
+        Metamorphosis
+        <br>
+        Franz Kafka
+        <br>
+        Absurdist Fiction
+        <br>
+        <pre></pre>
+        <p style="color: green; text-decoration-line: none;"> AVALIABLE</p>
+        </a>
+        </figcaption>
+        </figure>
+    </section>
+    <section class="Item">
+        <figure>
+            <p>
+                <img src="Book3.jpg" alt="Moby Dick">
+                <figcaption>
+                    Moby Dick
+                    <br>
+                    Herman Melville
+                    <br>
+                    Adventure Fiction
+                    <br>
+                    <pre></pre>
+                    <p style="color: RED; text-decoration-line: none;"> OUT OF STOCK</p>
+                </p>
+            </figcaption>
+        </figure>
+    </section>
+    <section class="Item">
+        <figure>
+        <a href="Checkout.html" style="text-decoration-line: none;">
+        <img src="Book4.jpg" alt="Wuthering Heights">
+        <figcaption>
+        Wuthering Heights
+        <br>
+        Emily Bronte
+        <br>
+        Novel
+        <br>
+        <pre></pre>
+        <p style="color: green; text-decoration-line: none;"> AVALIABLE</p>
+        </a>
+        </figcaption>
+        </figure>
+    </section>
+    <section class="Item">
+        <figure>
+        <a href="Checkout.html" style="text-decoration-line: none;">
+        <img src="Book5.jpg" alt="Prisoner of Zenda">
+        <figcaption>
+        The Prisoner of Zenda
+        <br>
+        Anthony Hope
+        <br>
+        Novel
+        <br>
+        <pre></pre>
+        <p style="color: green; text-decoration-line: none;"> AVALIABLE</p>
+        </a>
+        </figcaption>
+        </figure>
+    </section>
+    <section class="Item">
+        <figure>
+        <a href="Checkout.html" style="text-decoration-line: none;">
+        <img src="Book6.jpg" alt="Da Vinci Code">
+        <figcaption>
+        Da Vinci Code
+        <br>
+        Dan Brown
+        <br>
+        Detective Fiction
+        <br>
+        <pre></pre>
+        <p style="color: green; text-decoration-line: none;"> AVALIABLE</p>
+        </a>
+        </figcaption>
+        </figure>
+    </section>
+    
+</div>
 <nav class="Contact">
     <p>Phone: XXXXXXXXXXX</p>
     <p>Email: xxxxxxx@gmail.com</p>

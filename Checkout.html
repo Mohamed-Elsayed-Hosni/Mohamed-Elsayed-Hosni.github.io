@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>Homepage</title>
+<title>Catalogue</title>
 <style>
 
 body{
@@ -30,11 +30,31 @@ h2{
     text-align: center;
     flex-basis: 100%;
 }
-section.Announcement{
-    border:1vw  solid black;
-    width: 70%;
+section.Item{
+    display: flex;
+    width: 40%;
+    height: fit-content;
+    justify-content: center;
+    margin: 10px;
+    margin-bottom: 50px;
+    padding-top: 150px;
+    margin-right: -400px;
 }
-div.list{
+section.Item > figure{
+    width:60%;
+    height: 50%;
+    margin: 0px;
+    
+}
+
+section.Item * img  {
+    width:100%;
+    height: auto; 
+    max-width: 250px;
+    max-height: 350px;
+    object-fit:fill;
+}
+div.Checkout{
     display: flex;
     grid-column-start: 2;
     grid-column-end: 12;
@@ -43,8 +63,16 @@ div.list{
     grid-row-end:19;
     justify-content: space-evenly;
     flex-wrap: wrap;
-    align-items: flex-start;
+    align-items: center;
+    align-content: flex-start;
 
+}
+figcaption{
+    width:50%;
+    height:50%;
+    text-align: center;
+    justify-self: center;
+    color: teal;
 }
 nav.Search{
     display:flex;
@@ -65,9 +93,15 @@ nav.Search{
     border-color:black;
     border: 1px;
 }
-aside.Services{
-    background-image: url(/Assignment1/ECommerceAssignment/ServiceBar.jpg);
-    width: 20%;
+aside.info{
+    width: 50%;
+    height: fit-content;
+    justify-items: center;
+    align-content: space-between;
+}
+aside.BookInfo{
+    width: 60%;
+    height: fit-content;
     justify-items: center;
     align-content: space-between;
 }
@@ -111,6 +145,22 @@ a:hover{
     grid-column-start:1;
     grid-column-end: 17;
 }
+form {
+    display:flex;
+    background-color: white;
+    width:60%;
+    height: 50%;
+    max-width: fit-content;
+    max-height: fit-content;
+    padding: 10px;
+    margin: 0px;
+    border : 5px solid steelblue;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-content: space-between;
+    justify-content: flex-start;
+    align-items: center;
+} 
 
 </style>
 </head>
@@ -123,7 +173,50 @@ Welcome to CUFE's Online Library
 <nav class="Search">
 <a class="Navigation" href="HomePage.html">Home</a>     <a class="Navigation" href="Catalogue.html">Catalogue</a>     <a class="Navigation" href="Checkout.html">Checkout</a>
 </nav>
-<div class="list"></div>
+<div class="Checkout">
+         <section class="Item">
+        <figure>
+        <a href="Checkout.html" style="text-decoration-line: none;">
+        <img src="Book1.jpg" alt="The Art Of War">
+        <figcaption>
+        The Art of War
+        <br>
+        Sun Tzu
+        <br>
+        Classic Literature
+        <br>
+        <pre></pre>
+        <p style="color: green; text-decoration-line: none;"> AVALIABLE</p>
+        </a>
+        </figcaption>
+        </figure>
+        <aside class="BookInfo">
+        <p>
+        The Art of War is an ancient Chinese military treatise dating from the late Spring and Autumn period (roughly 5th century BC). 
+        The work, which is attributed to the ancient Chinese military strategist Sun Tzu ("Master Sun"), is composed of 13 chapters.
+         Each one is devoted to a different set of skills or art related to warfare and how it applies to military strategy and tactics. 
+        For almost 1,500 years, it was the lead text in an anthology that was formalized as the Seven Military Classics by Emperor Shenzong of Song in 1080.
+        </p>
+        </aside>
+    </section>
+    <aside class="info">
+    <form>
+    <label>First Name</label>
+    <input type="text">
+    <label>Last Name</label>
+    <input type="text">
+    <label>Email</label>
+    <input type="text">
+    <label>Address</label>
+    <input type="text">
+    <label>Phone Number</label>
+    <input type="text">
+    <br>
+    <br>
+    <input type="submit">
+    </form>
+    </aside>
+</div>
 <nav class="Contact">
     <p>Phone: XXXXXXXXXXX</p>
     <p>Email: xxxxxxx@gmail.com</p>
