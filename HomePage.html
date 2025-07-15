@@ -9,7 +9,8 @@ body{
    background-repeat:no-repeat;
    background-size: 100% 100%;
     background-attachment: fixed;
-   height:1800px;
+   height:fit-content;
+    min-height: 860px;
    width:100%;
     margin:0px;
     padding:0px;
@@ -25,13 +26,25 @@ body{
     repeat(16,1fr)
     30px;
 }
+h2{
+    text-align: center;
+    flex-basis: 100%;
+}
+section.Announcement{
+    border:1vw  solid black;
+    width: 70%;
+}
 div.list{
-    display: grid;
+    display: flex;
     grid-column-start: 2;
     grid-column-end: 12;
     background-color: white;
     grid-row-start: 3;
     grid-row-end:19;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    align-items: flex-start;
+
 }
 nav.Search{
     display:flex;
@@ -52,6 +65,12 @@ nav.Search{
     border-color:black;
     border: 1px;
 }
+aside.Services{
+    background-image: url(/Assignment1/ECommerceAssignment/ServiceBar.jpg);
+    width: 20%;
+    justify-items: center;
+    align-content: space-between;
+}
 nav.Contact{
     display:flex;
     align-items:center;
@@ -69,7 +88,7 @@ nav.Contact{
     border-color:black;
     border: 1px;
 }
-a{
+a.Navigation{
     font-size: 20px;
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     color:rgb(214, 64, 64);
@@ -103,10 +122,45 @@ Welcome to CUFE's Online Library
 </h1>
 </div>
 <nav class="Search">
-<a href="">Home</a>     <a href="">Catalogue</a>     <a href="">Checkout</a>
+<a class="Navigation" href="HomePage.html">Home</a>     <a class="Navigation" href="Catalogue.html">Catalogue</a>     <a class="Navigation" href="Checkout.html">Checkout</a>
 </nav>
-<div class="list"></div>
-<nav class="Contact">
+<div class="list">
+    <section style="height: min-content;">
+    <h2>About us!</h2>
+    <br>
+    <p style="text-align: center"> 
+         CUFE Online Library is a website dedictated towards ensuring the capability of any student
+         within our faculty of engineering to access both scientific books for their coursework as well 
+         as non=scientific books to promote recreational reading for our engineering students! 
+         <br>
+         <br>
+         We hope that you find our selection of books to your liking and if you have any recommendations for books; Feel free to contact us either directly at the faculty or through our contact information. Which you can find <a href="#Contact" style="color:blue; font-size: medium;">Here</a>
+    </p>
+    </section>
+    <aside class ="Services" >
+        <p>
+        <a style="color: brown;" href=Catalogue.html>E-Books</a>
+        </p>
+        <p>
+        Lending
+        </p>
+        <p>
+        FAQ
+        </p>
+
+  
+    </aside>
+    <section class="Announcement">
+    <h2>
+        Announcements
+    </h2>
+    <pre>
+        We are currently running a "Lend-A-Book" Campaign!
+        Until the XX/XX/2025, All books are free to lend without any additional fees!
+    </pre>
+    </section>
+</div>
+<nav class="Contact" id="Contact">
     <p>Phone: XXXXXXXXXXX</p>
     <p>Email: xxxxxxx@gmail.com</p>
     <p>Location: Cairo University Faculty of Engineering</p>

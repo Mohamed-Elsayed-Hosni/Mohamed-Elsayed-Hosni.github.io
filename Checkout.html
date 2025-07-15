@@ -9,7 +9,8 @@ body{
    background-repeat:no-repeat;
    background-size: 100% 100%;
     background-attachment: fixed;
-   height:1800px;
+   height:fit-content;
+    min-height: 860px;
    width:100%;
     margin:0px;
     padding:0px;
@@ -25,13 +26,25 @@ body{
     repeat(16,1fr)
     30px;
 }
+h2{
+    text-align: center;
+    flex-basis: 100%;
+}
+section.Announcement{
+    border:1vw  solid black;
+    width: 70%;
+}
 div.list{
-    display: grid;
+    display: flex;
     grid-column-start: 2;
     grid-column-end: 12;
     background-color: white;
     grid-row-start: 3;
     grid-row-end:19;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    align-items: flex-start;
+
 }
 nav.Search{
     display:flex;
@@ -52,6 +65,12 @@ nav.Search{
     border-color:black;
     border: 1px;
 }
+aside.Services{
+    background-image: url(/Assignment1/ECommerceAssignment/ServiceBar.jpg);
+    width: 20%;
+    justify-items: center;
+    align-content: space-between;
+}
 nav.Contact{
     display:flex;
     align-items:center;
@@ -69,7 +88,7 @@ nav.Contact{
     border-color:black;
     border: 1px;
 }
-a{
+a.Navigation{
     font-size: 20px;
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     color:rgb(214, 64, 64);
@@ -93,7 +112,6 @@ a:hover{
     grid-column-end: 17;
 }
 
-
 </style>
 </head>
 <body>
@@ -103,7 +121,7 @@ Welcome to CUFE's Online Library
 </h1>
 </div>
 <nav class="Search">
-<a href="">Home</a>     <a href="">Catalogue</a>     <a href="">Checkout</a>
+<a class="Navigation" href="HomePage.html">Home</a>     <a class="Navigation" href="Catalogue.html">Catalogue</a>     <a class="Navigation" href="Checkout.html">Checkout</a>
 </nav>
 <div class="list"></div>
 <nav class="Contact">
