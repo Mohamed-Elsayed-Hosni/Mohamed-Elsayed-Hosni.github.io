@@ -3,6 +3,16 @@
 <head>
 <title>Login to The Library</title>
 <style>
+p.ERROROFF{
+    text-align: center;
+    justify-self: center;
+    color: rgb(0,0,128);
+}
+p.ERRORON{
+    text-align: center;
+    justify-self: center;
+    color: rgb(128,0,0);
+}
 form {
     background-color: white;
     align-self: center;
@@ -108,19 +118,17 @@ nav.Search{
 Welcome to CUFE's Online Library
 </h1>
 </div>
-<form>
-<label>First Name</label><br>
-<input type="text"><br>
-<label>Last Name</label><br>
-<input type="text"><br>
-<label>Email</label><br>
-<input type="text"><br>
-<label>Date of Birth</label><br>
-<input type="text"><br>
+<form id="Sign">
+<p class="ERROROFF">
+</p>
+<label>Username</label><br>
+<input type="text" id="Username"><br>
+<label>Password</label><br>
+<input type="text" id="Password"><br>
 <br>
 <input type="submit">
-<input type="button" value="Not a New User?">
 <a href="HomePage.html"> Continue as Guest</a>
 </form>
+<script src="Scripts/index.js"></script>
 </body>
 </html>

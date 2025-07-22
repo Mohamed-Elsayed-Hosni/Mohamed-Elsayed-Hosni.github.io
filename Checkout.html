@@ -3,7 +3,16 @@
 <head>
 <title>Catalogue</title>
 <style>
-
+p.ERROROFF{
+    text-align: center;
+    justify-self: center;
+    color: rgb(0,0,128);
+}
+p.ERRORON{
+    text-align: center;
+    justify-self: center;
+    color: rgb(128,0,0);
+}
 body{
     background-image: url("Banner.jpeg");
    background-repeat:no-repeat;
@@ -55,7 +64,7 @@ section.Item * img  {
     object-fit:fill;
 }
 div.Checkout{
-        min-height: 850px;
+    min-height: 850px;
     display: flex;
     grid-column-start: 2;
     grid-column-end: 12;
@@ -69,7 +78,7 @@ div.Checkout{
 
 }
 figcaption{
-    width:50%;
+    width:100%;
     height:50%;
     text-align: center;
     justify-self: center;
@@ -149,8 +158,8 @@ a:hover{
 form {
     display:flex;
     background-color: white;
-    width:60%;
-    height: 50%;
+    width:fit-content;
+    height: fit-content;
     max-width: fit-content;
     max-height: fit-content;
     padding: 10px;
@@ -206,17 +215,19 @@ Welcome to CUFE's Online Library
         </aside>
     </section>
     <aside class="info">
-    <form>
+    <form id="Checkout">
+    <p class="ERROROFF">
+    </p>
     <label>First Name</label>
-    <input type="text">
-    <label>Last Name</label>
-    <input type="text">
-    <label>Email</label>
-    <input type="text">
-    <label>Address</label>
-    <input type="text">
+    <input type="text" id="First">
+    <label >Last Name</label>
+    <input type="text" id="Last">
+    <label >Email</label>
+    <input type="text" id="Email">
+    <label >Address</label>
+    <input type="text" id="Address">
     <label>Phone Number</label>
-    <input type="text">
+    <input type="text" id="Phone">
     <br>
     <br>
     <input type="submit">
@@ -228,5 +239,6 @@ Welcome to CUFE's Online Library
     <p>Email: xxxxxxx@gmail.com</p>
     <p>Location: Cairo University Faculty of Engineering</p>
 </nav>
+<script src="Scripts/Checkout.js"></script>
 </body>
 </html>
