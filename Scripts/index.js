@@ -25,5 +25,4 @@ else {
     Password.disabled=true;
     setTimeout(() => {window.location.assign("HomePage.html")},2000); 
 }
-
 }
