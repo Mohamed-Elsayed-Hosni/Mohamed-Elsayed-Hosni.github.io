@@ -23,7 +23,7 @@ else {
     msg.innerHTML=`Welcome back, ${Username.value}`;
     Username.disabled=true;
     Password.disabled=true;
-    setTimeout(() => {window.location.assign(url("Homepage.html"))},2000); 
+    setTimeout(() => {window.location.assign(url("HomePage.html"))},2000); 
 }
 
 }
