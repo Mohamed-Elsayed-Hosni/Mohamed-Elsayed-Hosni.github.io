@@ -66,6 +66,55 @@ nav.Search{
     border-color:black;
     border: 1px;
 }
+input[type=text]{
+    min-width: fit-content;
+    padding: 2px;
+    margin: 10px;
+    width: 20%;
+    height: 50px;
+    font-size: 40px;
+    text-align: center;
+    transition: width 0.4s ease-in-out, background-color 0.4s ease-in-out;
+}
+input[type=submit]{
+  background-color: #04AA6D;
+  border: none;
+  color: white;
+  padding: 16px 32px;
+  width: 25%;
+  font-size: 20px;
+  text-decoration: none;
+  margin: 4px 2px;
+  cursor: pointer;
+  transition: width 0.4s ease-in-out, font-size 0.4s ease-in-out;
+}
+input[type=submit]:hover{
+width:50%;
+font-size:30px;
+}
+input[type=text]:focus{
+    background-color: lightblue;
+    width: 100%;
+}
+form.ToDo{
+    width: 50%;
+    padding: 5%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 22.5%;
+    margin-right: 22.5%;
+    border: 10px ridge blueviolet ;
+    display:flex;
+    background-color: white;
+    height: fit-content;
+    max-height: fit-content;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+
+}
 aside.Services{
     background-image: url("ServiceBar.jpg");
     width: 20%;
@@ -113,6 +162,23 @@ a:hover{
     grid-column-end: 17;
 }
 
+p.search{
+        text-align: center;
+    justify-self: center;
+    color: rgb(0,0,128);
+    font-size:30px;
+}
+
+p.ERROROFF{
+    text-align: center;
+    justify-self: center;
+    color: rgb(0,0,128);
+}
+p.ERRORON{
+    text-align: center;
+    justify-self: center;
+    color: rgb(128,0,0);
+}
 
 </style>
 </head>
@@ -160,11 +226,20 @@ Welcome to CUFE's Online Library
         Until the XX/XX/2025, All books are free to lend without any additional fees!
     </pre>
     </section>
+    <form class="ToDo" id="ToDo">
+    <p class="ERROROFF" id="MSG">
+
+</p>
+    <p class="search">Search for a book</p>
+    <input type="text" id="taskname">
+    <input type="submit" id="submit">
+    </form>
 </div>
 <nav class="Contact" id="Contact">
     <p>Phone: XXXXXXXXXXX</p>
     <p>Email: xxxxxxx@gmail.com</p>
     <p>Location: Cairo University Faculty of Engineering</p>
 </nav>
+<script src="Homepage.js"></script>
 </body>
 </html>

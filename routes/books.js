@@ -28,8 +28,7 @@ router.get("/api/books",
         
   
         const filteredbooks= books.filter((book)=>book[filter].includes(value));
-        response.sendStatus(200)
-            return response.json(filteredbooks);
+        return response.json(filteredbooks);
     }
 
 )
