@@ -22,7 +22,7 @@ if(FirstName.value =='' || LastName.value =='' || Email.value =='' || Phone.valu
      ,3000)
     }
 else {
-    msg.innerHTML=`Thank you ${FirstName.value}, for your purchase of The Art of War`;
+    msg.innerHTML=`Thank you ${FirstName.value} ${LastName.value}, for your purchase of The Art of War. Your order will arrive at ${Address.value}`;
     setTimeout(() => {msg.innerHTML=''},5000); 
 }
 

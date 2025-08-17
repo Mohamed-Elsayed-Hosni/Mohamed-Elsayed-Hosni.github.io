@@ -1,0 +1,33 @@
+{
+  "name": "ecommerceassignment",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Mohamed-Elsayed-Hosni/Mohamed-Elsayed-Hosni.github.io.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "module",
+  "bugs": {
+    "url": "https://github.com/Mohamed-Elsayed-Hosni/Mohamed-Elsayed-Hosni.github.io/issues"
+  },
+  "homepage": "https://github.com/Mohamed-Elsayed-Hosni/Mohamed-Elsayed-Hosni.github.io#readme",
+  "dependencies": {
+    "express": "^5.1.0",
+    "express-validator": "^7.2.1",
+    "fs": "^0.0.1-security",
+    "node": "^24.6.0",
+    "os": "^0.1.2",
+    "path": "^0.12.7",
+    "url": "^0.11.4"
+  },
+  "devDependencies": {
+    "@faker-js/faker": "^9.9.0"
+  }
+}
